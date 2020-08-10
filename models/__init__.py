@@ -5,4 +5,3 @@ from . import product_compromise
 from . import sale
 from . import stock
 from . import mrp_production
-from . import stock_location

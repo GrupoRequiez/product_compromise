@@ -47,7 +47,7 @@ class SaleOrderLine(models.Model):
                 ('sale_id', '=', line.order_id.id),
                 ('product_id', '=', line.product_id.id),
                 ('state', '!=', 'cancel'),
-                ('product_qty', '=', line.product_uom_qty)],
+                ('product_qty', '=', line.product_qty)],
                 order='id', limit=1)
             # Ignores current MRP order in case multiple lines has the
             # same product quantity for the same product into the same SO
