@@ -161,7 +161,6 @@ class StockMove(models.Model):
     def action_reserve(self):
         txt = "compromise:%s move_out:%s qty:%s" % (
             self.compromise_qty, self.id, self.product_uom_qty)
-        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ", txt)
         return {
             'type': 'ir.actions.act_window',
             'res_model': 'reserve',
