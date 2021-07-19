@@ -12,7 +12,7 @@
     'website': "http://www.humanytek.com",
     'license': 'AGPL-3',
     'category': 'Sales',
-    'version': '0.0.1',
+    'version': '14.0.0.0.1',
     'depends': [
         'sale',
         'stock',
